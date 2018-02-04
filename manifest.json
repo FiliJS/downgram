@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+
+    "name": "Downgram",
+    "description" : "Extension for download instagram photos",
+    "default_locale": "en",
+    "version": "0.1",
+    
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "assets/images/instagram.png",
+        "default_title": "Click here!"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F" 
+            },
+            "description": "Opens popup.html"
+        }
+    }
+}

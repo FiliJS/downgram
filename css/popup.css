@@ -1,0 +1,73 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    width: 550px;
+    border-radius: 10px;
+    background-color: gray;
+    font-family: "Lato", sans-serif;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oleo Script', cursive;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.header {
+    background-color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.branch .branch__image,
+.branch .branch__title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.branch .branch__image .branch__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.branch .branch__title {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.optionsList {
+    font-size: 0;
+}
+
+.optionsList .optionsList__item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 70px;
+
+}
+
+.optionsList .optionsList__item:first-child {
+    background-color: #495867;
+}
+
+.optionsList .optionsList__item:nth-child(2) {
+    background-color: #F31749;
+}
+
+.optionsList .optionsList__item .optionsList__icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
