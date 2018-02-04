@@ -3,7 +3,7 @@
 
     "name": "Downgram",
     "description" : "Extension for download instagram photos",
-    "default_locale": "en",
+    // "default_locale": "en",
     "version": "0.1",
     
     "browser_action": {
@@ -25,5 +25,19 @@
             },
             "description": "Opens popup.html"
         }
-    }
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.instagram.com/p/*"
+            ],
+            "css": [
+                "css/downgram.css"
+            ],
+            "js": [
+                "js/downgram.js"
+            ]
+        }
+    ]
 }

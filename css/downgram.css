@@ -1,0 +1,19 @@
+._sxolz {
+    position: relative;
+}
+
+.button-download {
+    position: absolute;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 25px;
+    top: 0.8rem;
+    right: 0.8rem;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.button-download:hover {
+    opacity: 1;
+}
