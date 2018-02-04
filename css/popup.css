@@ -5,9 +5,9 @@ body {
 }
 
 body {
-    width: 550px;
+    width: 600px;
     border-radius: 10px;
-    background-color: gray;
+    background-color: #fff;
     font-family: "Lato", sans-serif;
 }
 
@@ -24,10 +24,25 @@ a {
     outline: none;
 }
 
+input {
+    outline: none;
+}
+
+.u-no-list {
+    list-style: none;
+    padding: 0;
+}
+
+.u-flex {
+    display: flex;
+}
+
 .header {
     background-color: #fff !important;
     display: flex;
     justify-content: space-between;
+    font-size: 0;
+    border-bottom: 1px solid #D7DDD7; /* #7B8787 */
 }
 
 .branch .branch__image,
@@ -43,7 +58,9 @@ a {
 
 .branch .branch__title {
     margin: 0;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #495867;
 }
 
 .optionsList {
@@ -70,4 +87,188 @@ a {
 .optionsList .optionsList__item .optionsList__icon {
     font-size: 1.5rem;
     color: #fff;
+}
+
+.menuContainer {
+    width: 35%;
+    border-right: 1px solid #D7DDD7;
+}
+
+.menu {
+    height: 100%;
+    background-color: #f6f6f6;
+    padding-top: 0.8rem;
+    position: relative;
+    min-height: 500px;
+}
+
+.menu .menu__top {
+    text-align: center;
+}
+
+.menu__button {
+    background-color: #F0C808;
+    color: #000;
+    width: 120px;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.menu__button .button__icon,
+.menu__button .button__text {
+    vertical-align: middle;
+}
+
+.menu__button .button__icon {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.menu__button .button__text {
+    font-size: 0.9rem;
+}
+
+.menu__content {
+    padding-top: 1rem;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu__title .title__text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 1rem;
+    color: #585459;
+}
+
+.menu__folderList {
+    overflow-x: scroll;
+}
+
+.folderList__item {
+    margin-bottom: 1rem;
+}
+
+.folderList__item .item__link {
+    color: #000;
+}
+
+.folderList__item .item__link .item__icon,
+.folderList__item .item__link .item__text {
+    vertical-align: middle;
+}
+
+.folderList__item .item__link .item__icon {
+    font-size: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.folderList__item .item__link .item__text {
+    font-size: 0.9rem;
+}
+
+.menu__bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #D7DDD7;
+}
+
+.menu__createFolder {
+    background-color: #fff;
+    display: flex;
+}
+
+.menu__createFolder .createFolder__iconContainer {
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.menu__createFolder .createFolder__iconContainer .createFolder__icon{
+   font-size: 1.5rem;
+   color: #585459;
+}
+
+.menu__createFolder .createFolder__inputContainer {
+    width: calc(100% - 40px);
+}
+
+.menu__createFolder .createFolder__inputContainer .createFolder__input {
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0 10px 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #585459;
+}
+
+.downloadContainer {
+    width: 65%;
+    padding: 0.8rem 1rem;
+}
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+.donwload__details {
+    display: flex;
+}
+
+.donwload__details .download__imageContainer {
+    margin-right: 0.5rem;
+}
+
+.donwload__details .download__imageContainer .download__image {
+    width: 50px;
+    height: 50px;
+}
+
+.donwload__details .download__info {
+    line-height: 50px;
+}
+
+.donwload__details .download__info .info__text {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.download__options {
+    display: flex;
+    line-height: 60px;
+}
+
+.download__options .options__button {
+    margin-right: 1rem;
+}
+
+.download__options .options__button .button__icon {
+    font-size: 1.5rem;
+}
+
+.download__options .options__button:last-child {
+    margin-right: 0;
+}
+
+.download__options .options__button:first-child .button__icon {
+    color: #585459;
+}
+
+.download__options .options__button:nth-child(2) .button__icon {
+    color: #F0C808;
+}
+
+.download__options .options__button:last-child .button__icon {
+    color: #F31749;
 }
